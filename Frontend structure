@@ -1,0 +1,26 @@
+frontend/
+├── README.md
+├── package.json
+├── public/
+│   ├── index.html
+│   └── ...
+└── src/
+    ├── assets/
+    │   ├── images/
+    │   └── styles/
+    ├── components/
+    │   ├── Header.js
+    │   ├── Footer.js
+    │   ├── ListingCard.js
+    │   └── ...
+    ├── pages/
+    │   ├── Home.js
+    │   ├── Listings.js
+    │   ├── UserProfile.js
+    │   └── ...
+    ├── services/
+    │   ├── api.js
+    │   └── auth.js
+    ├── App.js
+    ├── index.js
+    └── ...
