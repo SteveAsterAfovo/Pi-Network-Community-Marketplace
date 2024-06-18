@@ -42,7 +42,7 @@ Pour installer et exécuter localement ce projet, suivez ces étapes :
 2. Installer les dépendances du frontend et du backend:
 
    ```bash
-    cd SteveAsterAfovo/Pi-Network-Community-Marketplace/frontend
+   cd SteveAsterAfovo/Pi-Network-Community-Marketplace/frontend
     npm install
 
    cd SteveAsterAfovo/Pi-Network-Community-Marketplace/backend
@@ -55,10 +55,10 @@ Pour installer et exécuter localement ce projet, suivez ces étapes :
 
 4. Démarrer le serveur backend et l'application frontend:
 
-**Dans le dossier backend/**
+- **Dans le dossier backend/**
 npm start
 
-**Dans le dossier frontend/**
+- **Dans le dossier frontend/**
 npm start
 
 5. Accédez à l'application dans votre navigateur à l'adresse http://localhost:3000.
