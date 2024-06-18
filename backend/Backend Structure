@@ -1,0 +1,45 @@
+backend/
+│
+├── README.md
+├── package.json
+├── package-lock.json
+├── .env (fichier pour les variables d'environnement)
+├── server.js (point d'entrée de l'application)
+│
+├── src/
+│   ├── controllers/ (logique métier pour traiter les requêtes HTTP)
+│   │   ├── userController.js
+│   │   ├── itemController.js
+│   │   ├── transactionController.js
+│   │   └── ...
+│   │
+│   ├── models/ (modèles de données pour MongoDB)
+│   │   ├── User.js
+│   │   ├── Item.js
+│   │   ├── Transaction.js
+│   │   └── ...
+│   │
+│   ├── routes/ (définition des routes de l'API)
+│   │   ├── userRoutes.js
+│   │   ├── itemRoutes.js
+│   │   ├── transactionRoutes.js
+│   │   └── index.js (centralisation des routes)
+│   │
+│   ├── services/ (services utilitaires)
+│   │   ├── authService.js (gestion de l'authentification)
+│   │   ├── itemService.js (logique métier pour les items)
+│   │   ├── userService.js (logique métier pour les utilisateurs)
+│   │   └── ...
+│   │
+│   ├── config/ (configuration de l'application)
+│   │   ├── database.js (connexion à MongoDB)
+│   │   ├── express.js (configuration d'Express)
+│   │   └── ...
+│   │
+│   └── index.js (initialisation de l'application)
+│
+└── tests/ (tests unitaires et d'intégration)
+    ├── user.test.js
+    ├── item.test.js
+    ├── transaction.test.js
+    └── ...
