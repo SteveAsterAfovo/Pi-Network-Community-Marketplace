@@ -2,7 +2,7 @@ backend/
 │
 ├── README.md
 ├── package.json
-├── package-lock.json (ou yarn.lock si tu utilises Yarn)
+├── package-lock.json
 ├── .env (fichier pour les variables d'environnement)
 ├── server.js (point d'entrée de l'application)
 │
