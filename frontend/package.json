@@ -16,7 +16,7 @@
     "marketplace",
     "frontend"
   ],
-  "author": "Ton Nom",
+  "author": "Steve Aster Afovo",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",
