@@ -1,0 +1,40 @@
+frontend/
+│
+├── README.md
+├── package.json
+├── package-lock.json (ou yarn.lock si tu utilises Yarn)
+│
+├── public/
+│   ├── index.html
+│   └── ...
+│
+└── src/
+    ├── assets/ (images, fichiers CSS, etc.)
+    │   ├── css/
+    │   └── img/
+    │
+    ├── components/ (composants réutilisables)
+    │   ├── Header.js
+    │   ├── ItemList.js
+    │   ├── UserCard.js
+    │   └── ...
+    │
+    ├── pages/ (pages principales de l'application)
+    │   ├── Home.js
+    │   ├── Profile.js
+    │   ├── Marketplace.js
+    │   └── ...
+    │
+    ├── services/ (services pour gérer les appels API)
+    │   ├── userService.js
+    │   ├── itemService.js
+    │   └── ...
+    │
+    ├── utils/ (fonctions utilitaires)
+    │   ├── api.js (configuration des appels API)
+    │   ├── auth.js (gestion de l'authentification)
+    │   └── ...
+    │
+    ├── App.js (composant principal)
+    ├── index.js (point d'entrée de l'application)
+    └── ...
