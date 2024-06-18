@@ -1,37 +1,40 @@
-# Pi Network Community Marketplace
+# Marketplace Communautaire de Pi Network
 
-A decentralized platform where Pi Network users can buy and sell goods and services using Pi cryptocurrency.
+## Description
 
-## Features
+Une plateforme décentralisée permettant aux utilisateurs de Pi Network d'acheter et de vendre des biens et des services en utilisant Pi comme devise. Ce projet vise à renforcer l'utilité de Pi en tant que monnaie numérique et à créer une communauté plus solide autour de Pi Network.
 
-- User profiles and reputation system.
-- Secure escrow service for transaction security.
-- Seller and buyer rating and review system.
-- Integration with Pi Network for seamless Pi transactions.
+## Fonctionnalités
 
-## Technologies Used
+- **Profils Utilisateurs et Réputation**
+  - Création de profils utilisateurs avec système de réputation pour évaluer la fiabilité des vendeurs et des acheteurs.
 
-- **Frontend**: React.js
-- **Backend**: Node.js with Express.js
-- **Database**: MongoDB
-- **Blockchain Integration**: Pi SDK (or API)
+- **Service d'Entiercement Sécurisé**
+  - Mécanisme sécurisé pour garantir la réussite des transactions et la satisfaction des deux parties.
 
-## Installation
+- **Système d'Évaluation**
+  - Système de notation et de commentaire pour évaluer les transactions et les utilisateurs.
 
-1. Clone the repository.
-2. Install dependencies for frontend and backend.
-3. Set up MongoDB database.
-4. Start frontend and backend servers.
+- **Intégration avec Pi Network**
+  - Utilisation directe de Pi pour les transactions sur la plateforme, facilitée par une intégration fluide avec Pi Network.
 
-## Usage
+## Technologies Utilisées
 
-- Register as a user and start buying or selling using Pi.
-- Explore listings, manage transactions, and build your reputation.
+- **Frontend**
+  - Framework: React.js
+  - Bibliothèques UI: Bootstrap
+  - Gestion d'État: Redux
 
-## Contributing
+- **Backend**
+  - Framework: Node.js avec Express.js
+  - Base de données: MongoDB
+  - Contrats Intelligents: Utilisation du SDK Pi pour l'intégration blockchain (si disponible)
 
-Contributions are welcome! Check out the [Contribution Guidelines](CONTRIBUTING.md).
+## Installation et Utilisation
 
-## License
+Pour installer et exécuter localement ce projet, suivez ces étapes :
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+1. Cloner le repository:
+
+   ```bash
+   git clone https://github.com/SteveAsterAfovo/Pi-Network-Community-Marketplace.git
