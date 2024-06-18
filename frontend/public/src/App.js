@@ -8,20 +8,23 @@ import Profile from './pages/Profile';
 import About from './pages/About';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
+import './app.css'; // Importe le fichier de styles CSS global
 
 const App = () => {
   return (
     <Router>
       <div className="app">
         <Header />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/marketplace" component={Marketplace} />
-          <Route path="/profile" component={Profile} />
-          <Route path="/about" component={About} />
-          <Route path="/privacy" component={Privacy} />
-          <Route path="/terms" component={Terms} />
-        </Switch>
+        <div className="main-content">
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/marketplace" component={Marketplace} />
+            <Route path="/profile" component={Profile} />
+            <Route path="/about" component={About} />
+            <Route path="/privacy" component={Privacy} />
+            <Route path="/terms" component={Terms} />
+          </Switch>
+        </div>
         <Footer />
       </div>
     </Router>
@@ -29,3 +32,4 @@ const App = () => {
 };
 
 export default App;
+    
