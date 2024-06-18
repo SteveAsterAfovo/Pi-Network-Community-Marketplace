@@ -1,39 +1,81 @@
-import React from 'react';
-import ItemList from '../components/ItemList';
-import './Marketplace.css'; // Assure-toi de créer et styliser ce fichier CSS selon tes besoins
+import React, { useEffect, useState } from 'react';
+import { getAllItems, createItem, updateItem, deleteItem } from '../services/itemService';
 
 const Marketplace = () => {
-  const items = [
-    {
-      id: 1,
-      name: 'T-shirt Pi Network',
-      description: 'T-shirt officiel Pi Network. Disponible en différentes tailles et couleurs.',
-      price: 15,
-      image: 'https://example.com/t-shirt-image.jpg'
-    },
-    {
-      id: 2,
-      name: 'Service de consultation en Blockchain',
-      description: 'Consultation professionnelle en technologie Blockchain et crypto-monnaies.',
-      price: 50,
-      image: 'https://example.com/blockchain-consultation.jpg'
-    },
-    {
-      id: 3,
-      name: 'Art numérique Pi',
-      description: 'Art numérique créé par des artistes de la communauté Pi Network.',
-      price: 25,
-      image: 'https://example.com/digital-art.jpg'
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    const fetchItems = async () => {
+      try {
+        const itemsData = await getAllItems();
+        setItems(itemsData);
+      } catch (error) {
+        console.error('Erreur lors de la récupération des articles:', error.message);
+      }
+    };
+
+    fetchItems();
+  }, []);
+
+  const handleCreateItem = async () => {
+    const newItemData = {
+      name: 'Nouvel article',
+      description: 'Description de l\'article',
+      price: 10.99,
+      // Autres données pertinentes de l'article
+    };
+
+    try {
+      const createdItem = await createItem(newItemData);
+      setItems([...items, createdItem]);
+      console.log('Nouvel article créé avec succès:', createdItem);
+    } catch (error) {
+      console.error('Erreur lors de la création d\'un nouvel article:', error.message);
     }
-    // Ajoute d'autres articles selon les besoins
-  ];
+  };
+
+  const handleUpdateItem = async (itemId) => {
+    const updatedItemData = {
+      name: 'Article mis à jour',
+      description: 'Nouvelle description de l\'article',
+      price: 15.99,
+      // Autres données mises à jour de l'article
+    };
+
+    try {
+      const updatedItem = await updateItem(itemId, updatedItemData);
+      setItems(items.map(item => (item._id === updatedItem._id ? updatedItem : item)));
+      console.log('Article mis à jour avec succès:', updatedItem);
+    } catch (error) {
+      console.error('Erreur lors de la mise à jour de l\'article:', error.message);
+    }
+  };
+
+  const handleDeleteItem = async (itemId) => {
+    try {
+      await deleteItem(itemId);
+      setItems(items.filter(item => item._id !== itemId));
+      console.log('Article supprimé avec succès');
+    } catch (error) {
+      console.error('Erreur lors de la suppression de l\'article:', error.message);
+    }
+  };
 
   return (
-    <div className="marketplace">
-      <div className="container">
-        <h2>Explorez la Marketplace</h2>
-        <ItemList items={items} />
-      </div>
+    <div>
+      <h2>Marketplace</h2>
+      <button onClick={handleCreateItem}>Créer un nouvel article</button>
+      <ul>
+        {items.map(item => (
+          <li key={item._id}>
+            <p>Nom: {item.name}</p>
+            <p>Description: {item.description}</p>
+            <p>Prix: {item.price} €</p>
+            <button onClick={() => handleUpdateItem(item._id)}>Modifier</button>
+            <button onClick={() => handleDeleteItem(item._id)}>Supprimer</button>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
