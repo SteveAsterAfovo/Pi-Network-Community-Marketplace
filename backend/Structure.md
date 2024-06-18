@@ -1,0 +1,49 @@
+backend/
+│
+├── README.md
+├── package.json
+├── package-lock.json (ou yarn.lock si tu utilises Yarn)
+├── .env (fichier pour les variables d'environnement)
+├── server.js (point d'entrée de l'application)
+│
+├── src/
+│   ├── controllers/ (contrôleurs pour gérer la logique métier)
+│   │   ├── userController.js
+│   │   ├── itemController.js
+│   │   ├── transactionController.js
+│   │   └── ...
+│   │
+│   ├── models/ (modèles de données pour MongoDB)
+│   │   ├── User.js
+│   │   ├── Item.js
+│   │   ├── Transaction.js
+│   │   └── ...
+│   │
+│   ├── routes/ (définition des routes de l'API)
+│   │   ├── userRoutes.js
+│   │   ├── itemRoutes.js
+│   │   ├── transactionRoutes.js
+│   │   └── index.js (centralisation des routes)
+│   │
+│   ├── services/ (services utilitaires)
+│   │   ├── authService.js (gestion de l'authentification et des sessions)
+│   │   ├── transactionService.js (logique métier pour les transactions)
+│   │   └── ...
+│   │
+│   ├── utils/ (fonctions utilitaires)
+│   │   ├── errorHandler.js (gestion des erreurs)
+│   │   ├── validation.js (validation des données)
+│   │   └── ...
+│   │
+│   ├── config/ (configuration de l'application)
+│   │   ├── database.js (connexion à MongoDB)
+│   │   ├── express.js (configuration d'Express)
+│   │   └── ...
+│   │
+│   └── index.js (initialisation de l'application)
+│
+└── tests/ (tests unitaires et d'intégration)
+    ├── user.test.js
+    ├── item.test.js
+    ├── transaction.test.js
+    └── ...
