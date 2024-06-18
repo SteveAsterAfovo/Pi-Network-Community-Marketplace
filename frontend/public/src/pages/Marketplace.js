@@ -1,39 +1,41 @@
 import React from 'react';
 import ItemList from '../components/ItemList';
+import './Marketplace.css'; // Assure-toi de créer et styliser ce fichier CSS selon tes besoins
 
 const Marketplace = () => {
   const items = [
     {
       id: 1,
-      name: 'Article 1',
-      description: 'Description de l\'article 1',
-      price: 10,
-      image: 'url-to-image-1.jpg'
+      name: 'T-shirt Pi Network',
+      description: 'T-shirt officiel Pi Network. Disponible en différentes tailles et couleurs.',
+      price: 15,
+      image: 'https://example.com/t-shirt-image.jpg'
     },
     {
       id: 2,
-      name: 'Article 2',
-      description: 'Description de l\'article 2',
-      price: 20,
-      image: 'url-to-image-2.jpg'
+      name: 'Service de consultation en Blockchain',
+      description: 'Consultation professionnelle en technologie Blockchain et crypto-monnaies.',
+      price: 50,
+      image: 'https://example.com/blockchain-consultation.jpg'
     },
     {
       id: 3,
-      name: 'Article 3',
-      description: 'Description de l\'article 3',
-      price: 30,
-      image: 'url-to-image-3.jpg'
+      name: 'Art numérique Pi',
+      description: 'Art numérique créé par des artistes de la communauté Pi Network.',
+      price: 25,
+      image: 'https://example.com/digital-art.jpg'
     }
     // Ajoute d'autres articles selon les besoins
   ];
 
   return (
-    <div>
-      <h2>Marketplace</h2>
-      <ItemList items={items} />
+    <div className="marketplace">
+      <div className="container">
+        <h2>Explorez la Marketplace</h2>
+        <ItemList items={items} />
+      </div>
     </div>
   );
 };
 
 export default Marketplace;
-    
