@@ -1,0 +1,31 @@
+/* src/pages/Profile.css */
+
+.profile {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.profile-details {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.profile-details h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.profile-details p {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
