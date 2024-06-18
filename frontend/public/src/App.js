@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import Marketplace from './pages/Marketplace';
 import Profile from './pages/Profile';
 import About from './pages/About';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
           <Route path="/marketplace" component={Marketplace} />
           <Route path="/profile" component={Profile} />
           <Route path="/about" component={About} />
+          <Route path="/privacy" component={Privacy} />
+          <Route path="/terms" component={Terms} />
         </Switch>
         <Footer />
       </div>
