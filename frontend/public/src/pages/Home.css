@@ -1,0 +1,22 @@
+/* src/pages/Home.css */
+
+.home {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.home h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.home p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #555;
+}
