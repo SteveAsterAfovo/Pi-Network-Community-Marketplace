@@ -5,8 +5,9 @@ frontend/
 ├── package-lock.json
 │
 ├── public/
+│   ├── favicon.ico
 │   ├── index.html
-│   └── ...
+│   ├── styles.css
 │
 └── src/
     ├── assets/ (images, fichiers CSS, etc.)
