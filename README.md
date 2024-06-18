@@ -38,3 +38,10 @@ Pour installer et exécuter localement ce projet, suivez ces étapes :
 
    ```bash
    git clone https://github.com/SteveAsterAfovo/Pi-Network-Community-Marketplace.git
+
+Installer les dépendances du frontend et du backend:
+cd nom-du-repository/frontend
+npm install
+
+cd ../backend
+npm install
