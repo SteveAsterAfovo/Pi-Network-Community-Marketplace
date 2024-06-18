@@ -2,7 +2,7 @@ frontend/
 │
 ├── README.md
 ├── package.json
-├── package-lock.json (ou yarn.lock si tu utilises Yarn)
+├── package-lock.json
 │
 ├── public/
 │   ├── index.html
