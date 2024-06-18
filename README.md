@@ -39,9 +39,35 @@ Pour installer et exécuter localement ce projet, suivez ces étapes :
    ```bash
    git clone https://github.com/SteveAsterAfovo/Pi-Network-Community-Marketplace.git
 
-Installer les dépendances du frontend et du backend:
-cd nom-du-repository/frontend
-npm install
+2. Installer les dépendances du frontend et du backend:
 
-cd ../backend
-npm install
+   ```bash
+    cd SteveAsterAfovo/Pi-Network-Community-Marketplace/frontend
+    npm install
+
+   ```bash
+   cd SteveAsterAfovo/Pi-Network-Community-Marketplace/backend
+   npm install
+
+3. Configurer la base de données MongoDB:
+
+- Assurez-vous d'avoir une instance MongoDB en cours d'exécution.
+- Configurez les variables d'environnement nécessaires dans backend/.env.
+
+4. Démarrer le serveur backend et l'application frontend:
+
+# Dans le dossier backend/
+npm start
+
+# Dans le dossier frontend/
+npm start
+
+5. Accédez à l'application dans votre navigateur à l'adresse http://localhost:3000.
+
+## Documentation et Contribution
+Pour plus de détails sur l'architecture du projet, les choix technologiques et la contribution au développement, consultez la documentation dans le dossier docs/.
+
+Si vous souhaitez contribuer à ce projet, veuillez suivre les instructions dans [CONTRIBUTING.md](CONTRIBUTING.md) et ouvrir une pull request avec vos modifications.
+
+## Licence
+Ce projet est sous licence MIT. Pour plus de détails, consultez le fichier LICENSE.
