@@ -2,7 +2,7 @@
 
 Ce dossier contient le backend pour la Marketplace Communautaire de Pi Network, développé avec Node.js et Express.js, et utilisant MongoDB comme base de données.
 
-## [Structure du Projet](Backend Structure)
+## [Structure du Projet](Backend_Structure)
 
 - **`src/controllers/`**: Contient les contrôleurs pour gérer la logique métier.
 - **`src/models/`**: Modèles de données pour MongoDB.
