@@ -1,0 +1,27 @@
+/* app.css */
+
+/* Styles globaux pour l'application */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Styles spécifiques pour le contenu principal */
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Styles pour le footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
