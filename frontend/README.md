@@ -17,12 +17,12 @@ Pour installer et exécuter le frontend localement, suivez ces étapes :
 
 1. Clonez ce repository:
 ```bash
-   git clone https://github.com/SteveAsterAfovo/Pi-Network-Community-Marketplace.git
+git clone https://github.com/SteveAsterAfovo/Pi-Network-Community-Marketplace.git
 ```
    
 2. Accédez au dossier frontend:
 ```bash
-   cd SteveAsterAfovo/Pi-Network-Community-Marketplace/backend
+cd SteveAsterAfovo/Pi-Network-Community-Marketplace/backend
 ```
 
 3. Installez les dépendances:
