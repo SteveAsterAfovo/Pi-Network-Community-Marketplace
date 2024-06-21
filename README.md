@@ -36,17 +36,17 @@ Pour installer et exécuter localement ce projet, suivez ces étapes :
 
 1. Cloner le repository:
 
-   ```bash
-   git clone https://github.com/SteveAsterAfovo/Pi-Network-Community-Marketplace.git
+```bash
+git clone https://github.com/SteveAsterAfovo/Pi-Network-Community-Marketplace.git
 
 2. Installer les dépendances du frontend et du backend:
 
-   ```bash
-   cd SteveAsterAfovo/Pi-Network-Community-Marketplace/frontend
-    npm install
+```bash
+cd SteveAsterAfovo/Pi-Network-Community-Marketplace/frontend
+npm install
 
-   cd SteveAsterAfovo/Pi-Network-Community-Marketplace/backend
-   npm install
+cd SteveAsterAfovo/Pi-Network-Community-Marketplace/backend
+npm install
 
 3. Configurer la base de données MongoDB:
 
