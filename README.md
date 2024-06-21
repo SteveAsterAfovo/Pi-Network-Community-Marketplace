@@ -58,10 +58,10 @@ npm install
 4. Démarrer le serveur backend et l'application frontend:
 
 - **Dans le dossier backend/**
-npm start
+`npm start`
 
 - **Dans le dossier frontend/**
-npm start
+`npm start`
 
 5. Accédez à l'application dans votre navigateur à l'adresse http://localhost:3000.
 
