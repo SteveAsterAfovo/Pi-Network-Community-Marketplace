@@ -16,8 +16,7 @@ Ce dossier contient le frontend pour la Marketplace Communautaire de Pi Network,
 Pour installer et exécuter le frontend localement, suivez ces étapes :
 
 1. Clonez ce repository:
-
-   ```bash
+```bash
    git clone https://github.com/SteveAsterAfovo/Pi-Network-Community-Marketplace.git
    
 2. Accédez au dossier frontend:
