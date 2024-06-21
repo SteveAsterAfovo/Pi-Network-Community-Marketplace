@@ -22,7 +22,7 @@ Pour installer et exécuter le frontend localement, suivez ces étapes :
    
 2. Accédez au dossier frontend:
 ```bash
-   Installez les dépendances:
+   SteveAsterAfovo/Pi-Network-Community-Marketplace/backend
 ```
 
 3. Installez les dépendances:
